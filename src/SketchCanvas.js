@@ -76,6 +76,7 @@ class SketchCanvas extends React.Component {
     text: null,
     localSourceImage: null,
 
+    disablePermissionsRequest: false,
     permissionDialogTitle: "",
     permissionDialogMessage: "",
   };
