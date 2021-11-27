@@ -251,7 +251,7 @@ export default class RNSketchCanvas extends React.Component {
   }
 
   async componentDidMount() {
-    if (!this.disablePermissionsRequest) {
+    if (!this.props.disablePermissionsRequest) {
       const isStoragePermissionAuthorized = await requestPermissions(
         this.props.permissionDialogTitle,
         this.props.permissionDialogMessage
