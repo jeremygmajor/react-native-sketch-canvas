@@ -55,7 +55,7 @@ class SketchCanvas extends React.Component {
       directory: PropTypes.string,
       mode: PropTypes.oneOf(["AspectFill", "AspectFit", "ScaleToFill"]),
     }),
-    requirePermissions: PropTypes.bool,
+    disablePermissionsRequest: PropTypes.bool,
     permissionDialogTitle: PropTypes.string,
     permissionDialogMessage: PropTypes.string,
   };
@@ -326,7 +326,7 @@ class SketchCanvas extends React.Component {
   }
 
   async componentDidMount() {
-    if (this.requirePermissions) {
+    if (!this.disablePermissionsRequest) {
       const isStoragePermissionAuthorized = await requestPermissions(
         this.props.permissionDialogTitle,
         this.props.permissionDialogMessage
