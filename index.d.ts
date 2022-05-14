@@ -69,7 +69,7 @@ export interface SketchCanvasProps {
   /**
    * Android Only: Requires External Write permissions
    */
-  disablePermissionsRequest?: bool;
+  disablePermissionsRequest?: boolean;
   /**
    * Android Only: Provide a Dialog Title for the Image Saving PermissionDialog. Defaults to empty string if not set
    */
