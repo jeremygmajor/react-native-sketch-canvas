@@ -1,5 +1,6 @@
 import * as React from "react";
-import { ViewProperties, StyleProp, ViewStyle } from "react-native";
+import { StyleProp, ViewStyle } from "react-native";
+import { ViewProperties } from "deprecated-react-native-prop-types";
 
 type ImageType = "png" | "jpg";
 
