@@ -387,7 +387,7 @@ public class SketchCanvas extends View {
             Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         // replace 255, 242, 242, 242 with wanted colour or variable
-        canvas.drawARGB(transparent ? 0 : 255, 242, 242, 242);
+        canvas.drawARGB(transparent ? 0 : 255, 255, 255, 255);
 
         if (mBackgroundImage != null && includeImage) {
             Rect targetRect = new Rect();
